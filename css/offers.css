@@ -1,0 +1,16 @@
+/* Offers (posters) */
+.poster-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:22px}
+.poster{position:relative;border-radius:28px;padding:40px 32px;min-height:430px;display:flex;flex-direction:column;justify-content:flex-end;gap:12px;overflow:hidden;isolation:isolate;transition:transform .5s var(--ease)}
+.poster:hover{transform:translateY(-8px) rotate(-.6deg)}
+.poster h3{font-size:clamp(1.8rem,3vw,2.5rem)}
+.poster p{font-size:.98rem;max-width:300px}
+.poster .btn{align-self:flex-start;margin-top:8px}
+.poster-tag{align-self:flex-start;padding:5px 16px;border:1px solid currentColor;border-radius:999px;font-size:.82rem;letter-spacing:.06em}
+.poster-ornament{position:absolute;z-index:-1;width:300px;top:-60px;left:-80px;opacity:.28}
+.poster-bride{background:linear-gradient(160deg,#fff,var(--blush));color:var(--ink);border:1px solid #f1c9d5}
+.poster-bride .poster-ornament{color:var(--gold)}
+.poster-season{background:linear-gradient(160deg,var(--rose),var(--deep));color:#fff}
+.poster-season em,.poster-new em{color:#ffe0e8}
+.poster-new{background:linear-gradient(160deg,#4a3239,#2c1c21);color:#f6e9ee}
+.poster-new .poster-ornament{color:var(--gold)}
+.poster-new .poster-tag{color:var(--gold)}

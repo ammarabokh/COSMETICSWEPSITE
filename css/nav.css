@@ -1,0 +1,16 @@
+/* Top navigation */
+.nav{position:fixed;top:0;inset-inline:0;z-index:50;transition:background .4s,box-shadow .4s,padding .4s;padding:18px 0;color:#fff}
+.nav.scrolled{background:rgba(255,251,252,.92);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(61,42,48,.08);padding:10px 0;color:var(--ink)}
+.nav-inner{width:min(1280px,100% - 40px);margin-inline:auto;display:flex;align-items:center;gap:32px}
+.logo{font-family:var(--f-latin);font-size:2rem;font-style:italic;font-weight:600;letter-spacing:.08em;line-height:1;display:flex;flex-direction:column}
+.logo small{font-family:var(--f-body);font-style:normal;font-size:.68rem;letter-spacing:.1em;opacity:.85;margin-top:4px}
+.nav.scrolled .logo{color:var(--deep)}
+.nav-links{display:flex;gap:30px;margin-inline:auto;font-weight:500;font-size:.98rem}
+.nav-links a{position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;bottom:-2px;inset-inline:0;height:2px;background:currentColor;transform:scaleX(0);transition:transform .35s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.burger{display:none;background:none;border:0;width:38px;height:38px;position:relative;cursor:pointer;color:inherit}
+.burger span{position:absolute;inset-inline:7px;height:2px;background:currentColor;transition:transform .35s var(--ease),top .35s}
+.burger span:first-child{top:14px}.burger span:last-child{top:22px}
+.burger[aria-expanded=true] span:first-child{top:18px;transform:rotate(45deg)}
+.burger[aria-expanded=true] span:last-child{top:18px;transform:rotate(-45deg)}

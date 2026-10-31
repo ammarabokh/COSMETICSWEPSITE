@@ -1,0 +1,5 @@
+/* Marquee strip */
+.marquee{background:var(--blush);color:var(--deep);overflow:hidden;padding:18px 0;direction:ltr;border-block:1px solid rgba(201,87,125,.2)}
+.marquee-track{display:flex;gap:34px;width:max-content;animation:marquee 32s linear infinite;font-family:var(--f-head);font-size:1.5rem;align-items:center;white-space:nowrap}
+.marquee-track i{font-style:normal;color:var(--gold);font-size:1rem}
+@keyframes marquee{to{transform:translateX(-50%)}}

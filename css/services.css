@@ -1,0 +1,14 @@
+/* Services section */
+.services{background:var(--mist)}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{position:relative;background:#fff;border-radius:var(--radius);transition:transform .5s var(--ease),box-shadow .5s var(--ease);overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(246,213,223,.7)}
+.card:hover{transform:translateY(-10px);box-shadow:0 30px 50px -28px rgba(201,87,125,.55)}
+.card-img{aspect-ratio:4/3.4;overflow:hidden;background:var(--blush)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.card:hover .card-img img{transform:scale(1.08)}
+.card-body{position:relative;display:flex;flex-direction:column;gap:8px;padding:0 24px 24px;flex:1}
+.card-body i,.card-body svg{width:54px;height:54px;padding:14px;margin-top:-27px;margin-bottom:4px;border-radius:50%;background:#fff;color:var(--deep);stroke-width:1.5;box-shadow:0 8px 20px -8px rgba(201,87,125,.5);position:relative;z-index:1}
+.card h3{font-size:1.2rem}
+.card p{color:var(--muted);font-size:.95rem;flex:1}
+.card a{color:var(--deep);font-weight:700;margin-top:6px;transition:letter-spacing .3s}
+.card a:hover{letter-spacing:.04em}

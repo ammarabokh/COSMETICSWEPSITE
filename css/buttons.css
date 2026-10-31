@@ -1,0 +1,11 @@
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 34px;border-radius:999px;background:var(--deep);color:#fff;font-family:var(--f-body);font-weight:700;font-size:1rem;border:0;cursor:pointer;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .3s;box-shadow:0 10px 26px -10px rgba(201,87,125,.7)}
+.btn:hover{transform:translateY(-3px);background:#b84a70;box-shadow:0 16px 30px -10px rgba(201,87,125,.75)}
+.btn-sm{padding:10px 24px;font-size:.95rem}
+.btn-ghost{background:rgba(255,255,255,.14);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.55);box-shadow:none}
+.btn-ghost:hover{background:rgba(255,255,255,.28);box-shadow:none}
+.btn-light{background:#fff;color:var(--deep);box-shadow:none}
+.btn-light:hover{background:var(--mist)}
+.btn-wa{background:#1fa855;box-shadow:0 10px 26px -10px rgba(31,168,85,.7);width:100%;padding:16px}
+.btn-wa:hover{background:#188a45}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFBFC">
+  <!-- العنوان والوصف الحقيقيان في content/site.js -> meta (هنا نسخة احتياطية فقط) -->
+  <title>Leen</title>
+  <meta name="description" content="Leen صالون تجميل نسائي">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Reem+Kufi:wght@500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+
+  <!-- التنسيقات: ملف لكل قسم داخل مجلد css -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/marquee.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/offers.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/booking.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="is-loading">
+
+  <!-- هيكل الصفحة فقط. محتوى كل قسم يُبنى من content/site.js بواسطة js/sections/<القسم>.js -->
+  <div class="loader" id="loader" aria-hidden="true"></div>
+
+  <header class="nav" id="nav"></header>
+
+  <main id="top">
+    <section class="hero" id="hero" aria-label="مقدمة"></section>
+    <div class="marquee" id="marquee" aria-hidden="true"></div>
+    <section class="section about" id="about"></section>
+    <section class="section services" id="services"></section>
+    <section class="section offers" id="offers"></section>
+    <section class="section gallery" id="gallery"></section>
+    <section class="section reviews" id="reviews"></section>
+    <section class="section booking" id="booking"></section>
+    <section class="section contact" id="contact"></section>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="واتساب"></a>
+
+  <!-- المكتبات الخارجية -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
+  <!-- المحتوى (النصوص والروابط ومسارات الصور) -->
+  <script src="content/site.js"></script>
+
+  <!-- الأكواد: أدوات مشتركة ← بناء الأقسام ← السلوكيات ← التشغيل -->
+  <script src="js/utils.js"></script>
+  <script src="js/sections/nav.js"></script>
+  <script src="js/sections/hero.js"></script>
+  <script src="js/sections/marquee.js"></script>
+  <script src="js/sections/about.js"></script>
+  <script src="js/sections/services.js"></script>
+  <script src="js/sections/offers.js"></script>
+  <script src="js/sections/gallery.js"></script>
+  <script src="js/sections/reviews.js"></script>
+  <script src="js/sections/booking.js"></script>
+  <script src="js/sections/contact.js"></script>
+  <script src="js/sections/footer.js"></script>
+  <script src="js/features/nav.js"></script>
+  <script src="js/features/hero-video.js"></script>
+  <script src="js/features/smooth-scroll.js"></script>
+  <script src="js/features/reveal.js"></script>
+  <script src="js/features/reviews-slider.js"></script>
+  <script src="js/features/ring-gallery.js"></script>
+  <script src="js/features/booking-form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

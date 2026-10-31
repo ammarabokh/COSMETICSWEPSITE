@@ -1,0 +1,14 @@
+/* Booking form */
+.booking{background:linear-gradient(180deg,var(--pearl),var(--mist))}
+.booking-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(30px,6vw,80px);align-items:center}
+.booking-copy h2{margin-bottom:16px}
+.booking-copy p{color:var(--muted);margin-bottom:22px}
+.booking-points li{padding-inline-start:30px;position:relative;margin-bottom:8px}
+.booking-points li::before{content:"✦";position:absolute;inset-inline-start:0;color:var(--gold)}
+.form{background:#fff;border-radius:28px;padding:clamp(24px,4vw,40px);box-shadow:0 40px 70px -40px rgba(201,87,125,.55);display:grid;gap:16px}
+.form label{display:grid;gap:6px;font-weight:500;font-size:.95rem}
+.form input,.form select,.form textarea{width:100%;font:inherit;padding:13px 16px;border-radius:14px;border:1.5px solid var(--blush);background:var(--pearl);color:var(--ink);transition:border-color .25s,box-shadow .25s}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 4px rgba(229,154,178,.25)}
+.form .invalid{border-color:#d1435b}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-msg{min-height:1.4em;font-size:.9rem;color:#c0344f;text-align:center}
