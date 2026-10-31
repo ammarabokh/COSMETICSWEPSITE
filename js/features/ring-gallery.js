@@ -12,10 +12,10 @@ Leen.features.ringGallery = function () {
   // card size, ring radius and camera distance depend on the stage width
   function layout() {
     var sw = stage.clientWidth;
-    var w = sw < 600 ? sw * 0.44 : Math.max(150, Math.min(340, sw * 0.27));
+    var w = sw < 600 ? sw * 0.62 : Math.max(220, Math.min(470, sw * 0.37));
     var h = w * 1.34;
     var R = w * 2.15;
-    stage.style.height = Math.round(h * 1.5) + 'px';
+    stage.style.height = Math.round(h * 1.12) + 'px';
     stage.style.perspective = Math.round(R * 0.66) + 'px';
     stage.style.setProperty('--w', w + 'px');
     stage.style.setProperty('--h', h + 'px');
