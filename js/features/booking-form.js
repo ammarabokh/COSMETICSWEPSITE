@@ -1,5 +1,5 @@
 /* Booking form: validates and opens WhatsApp with a ready message.
-   Message wording is in content/site.js -> booking.message; the number in settings.whatsappNumber. */
+   Message wording is in content/ar.js + content/en.js -> booking.message; the number in settings.whatsappNumber. */
 Leen.features.bookingForm = function () {
   var $ = Leen.$, $$ = Leen.$$;
   var form = $('#bookingForm'), select = $('#serviceSelect'), msg = $('#formMsg'), dateInput = $('#dateInput');

@@ -1,0 +1,28 @@
+/* English (LTR) overrides: fonts, type sizes and the few rules that depend on reading direction */
+html[lang="en"]{
+  --f-head:'Cormorant Garamond','Times New Roman',serif;
+  --f-body:'Jost',system-ui,sans-serif;
+}
+html[lang="en"] body{font-size:17px;line-height:1.7}
+html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3{font-weight:600;letter-spacing:-.005em;line-height:1.15}
+html[lang="en"] h2{font-size:clamp(2.3rem,5vw,3.8rem)}
+html[lang="en"] .hero-text h1,html[lang="en"] .hero-text h2{font-size:clamp(2.9rem,8.2vw,6.2rem)}
+html[lang="en"] .card h3{font-size:1.5rem}
+html[lang="en"] .poster h3{font-size:clamp(2.1rem,3.4vw,2.9rem)}
+html[lang="en"] .review blockquote{font-size:clamp(1.4rem,2.6vw,1.8rem);line-height:1.5}
+html[lang="en"] .stats b{font-size:2.6rem}
+html[lang="en"] .marquee-track{font-size:1.7rem}
+html[lang="en"] .nav-links{font-size:.95rem;letter-spacing:.02em}
+html[lang="en"] .eyebrow{letter-spacing:.2em}
+html[lang="en"] .btn{letter-spacing:.03em}
+
+/* mirrored composition of the About photos */
+html[dir="ltr"] .about-media{padding:0 60px 60px 0}
+html[dir="ltr"] .about-img-main{border-radius:var(--radius) var(--radius) var(--radius) 200px}
+html[dir="ltr"] .about-img-sub{left:auto;right:0}
+html[dir="ltr"] .about-badge{right:auto;left:-10px}
+
+@media (max-width:560px){
+  html[dir="ltr"] .about-media{padding:0 36px 46px 0}
+  html[dir="ltr"] .about-badge{left:0}
+}

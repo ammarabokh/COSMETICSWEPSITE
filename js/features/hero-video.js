@@ -1,6 +1,6 @@
 /* Hero: scroll-scrubbed video.
    The video is a sequence of WebP frames (assets/frames/hero) drawn on a <canvas>.
-   Frame count/paths and when each text step appears are set in content/site.js -> settings. */
+   Frame count/paths and when each text step appears are set in content/settings.js -> */
 Leen.features.heroVideo = (function () {
   var $ = Leen.$, $$ = Leen.$$;
   var cfg = window.SITE.settings.heroFrames;

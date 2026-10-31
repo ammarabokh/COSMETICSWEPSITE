@@ -14,3 +14,5 @@
 .burger span:first-child{top:14px}.burger span:last-child{top:22px}
 .burger[aria-expanded=true] span:first-child{top:18px;transform:rotate(45deg)}
 .burger[aria-expanded=true] span:last-child{top:18px;transform:rotate(-45deg)}
+.lang-switch{background:transparent;border:1.5px solid currentColor;color:inherit;font-family:var(--f-body);font-weight:600;font-size:.9rem;line-height:1;padding:9px 16px;border-radius:999px;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.lang-switch:hover{background:var(--deep);border-color:var(--deep);color:#fff}

@@ -1,11 +1,11 @@
-/* Markup for the Reviews slider (#reviews). Text comes from content/site.js -> reviews. */
+/* Markup for the Reviews slider (#reviews). Text comes from content/ar.js + content/en.js -> reviews. */
 Leen.sections.reviews = function (c) {
   var r = c.reviews;
   var slides = r.items.map(function (it) {
     var stars = new Array(it.stars + 1).join('★');
     return '' +
       '<figure class="swiper-slide review">' +
-        '<div class="stars" aria-label="' + it.stars + ' من 5">' + stars + '</div>' +
+        '<div class="stars" aria-label="' + it.stars + ' ' + c.ui.ofFive + '">' + stars + '</div>' +
         '<blockquote>' + it.text + '</blockquote>' +
         '<figcaption>' + it.author + '</figcaption>' +
       '</figure>';

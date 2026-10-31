@@ -1,4 +1,4 @@
-/* Markup for the About section (#about). Text/images come from content/site.js -> about. */
+/* Markup for the About section (#about). Text/images come from content/ar.js + content/en.js -> about. */
 Leen.sections.about = function (c) {
   var a = c.about;
   var stats = a.stats.map(function (s) {

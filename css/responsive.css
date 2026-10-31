@@ -25,3 +25,7 @@
 @media (prefers-reduced-motion:reduce){
   .marquee-track,.about-badge,.scroll-hint i,.wa-float::after{animation:none}
 }
+@media (max-width:860px){
+  .lang-switch{margin-inline-start:auto;padding:8px 14px}
+  .burger{margin-inline-start:0}
+}

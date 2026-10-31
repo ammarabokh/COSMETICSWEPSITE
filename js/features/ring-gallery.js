@@ -1,5 +1,5 @@
 /* "Our work" gallery: images on a 3D ring that rotates by itself and can be dragged.
-   Rotation speed is set in content/site.js -> settings.ringSpeed. */
+   Rotation speed is set in content/settings.js -> ringSpeed. */
 Leen.features.ringGallery = function () {
   var $ = Leen.$, $$ = Leen.$$;
   var stage = $('#ringStage'), ring = $('#ring');

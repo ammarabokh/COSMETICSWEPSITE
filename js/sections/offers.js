@@ -1,4 +1,4 @@
-/* Markup for the Offers posters (#offers). Text comes from content/site.js -> offers.
+/* Markup for the Offers posters (#offers). Text comes from content/ar.js + content/en.js -> offers.
    The decorative SVG for each poster variant (bride / season / new) is defined here. */
 Leen.sections.offers = function (c) {
   var o = c.offers;

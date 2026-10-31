@@ -1,4 +1,4 @@
-/* Entry point: builds every section from content/site.js, then starts the behaviours. */
+/* Entry point: builds every section from content/ar.js + content/en.js, then starts the behaviours. */
 (function () {
   var C = window.SITE;
 
@@ -17,7 +17,8 @@
   var desc = document.querySelector('meta[name="description"]');
   if (desc) desc.setAttribute('content', C.meta.description);
   var wa = document.getElementById('waFloat');
-  if (wa) wa.href = Leen.waLink();
+  if (wa) { wa.href = Leen.waLink(); wa.setAttribute('aria-label', C.ui.whatsappAria); }
+  document.getElementById('hero').setAttribute('aria-label', C.ui.heroAria);
 
   if (window.lucide) window.lucide.createIcons();
 

@@ -1,4 +1,4 @@
-/* Markup for the "Our work" gallery (#gallery). Text/images come from content/site.js -> gallery. */
+/* Markup for the "Our work" gallery (#gallery). Text/images come from content/ar.js + content/en.js -> gallery. */
 Leen.sections.gallery = function (c) {
   var g = c.gallery;
   var cards = g.images.map(function (im) {

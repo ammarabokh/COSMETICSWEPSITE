@@ -1,4 +1,4 @@
-/* Markup for the Contact + map section (#contact). Text comes from content/site.js -> contact, settings. */
+/* Markup for the Contact + map section (#contact). Text comes from content/ar.js + content/en.js -> contact, and content/settings.js. */
 Leen.sections.contact = function (c) {
   var k = c.contact;
   var map = 'https://maps.google.com/maps?q=' + encodeURIComponent(k.mapQuery) + '&t=&z=15&ie=UTF8&iwloc=&output=embed';

@@ -1,4 +1,4 @@
-/* Markup for the hero (#hero). Text comes from content/site.js -> hero. */
+/* Markup for the hero (#hero). Text comes from content/ar.js + content/en.js -> hero. */
 Leen.sections.hero = function (c) {
   var steps = c.hero.steps.map(function (s, i) {
     var tag = i === 0 ? 'h1' : 'h2';

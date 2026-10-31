@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#FFFBFC">
-  <!-- العنوان والوصف الحقيقيان في content/site.js -> meta (هنا نسخة احتياطية فقط) -->
+  <!-- العنوان والوصف الحقيقيان في content/ar.js و content/en.js -> meta (هنا نسخة احتياطية فقط) -->
   <title>Leen</title>
   <meta name="description" content="Leen صالون تجميل نسائي">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Reem+Kufi:wght@500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&family=Reem+Kufi:wght@500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
 
   <!-- التنسيقات: ملف لكل قسم داخل مجلد css -->
@@ -29,10 +29,11 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/lang-en.css">
 </head>
 <body class="is-loading">
 
-  <!-- هيكل الصفحة فقط. محتوى كل قسم يُبنى من content/site.js بواسطة js/sections/<القسم>.js -->
+  <!-- هيكل الصفحة فقط. محتوى كل قسم يُبنى من content/ar.js أو content/en.js بواسطة js/sections/<القسم>.js -->
   <div class="loader" id="loader" aria-hidden="true"></div>
 
   <header class="nav" id="nav"></header>
@@ -61,7 +62,10 @@
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
 
   <!-- المحتوى (النصوص والروابط ومسارات الصور) -->
-  <script src="content/site.js"></script>
+  <script src="content/settings.js"></script>
+  <script src="content/ar.js"></script>
+  <script src="content/en.js"></script>
+  <script src="content/select.js"></script>
 
   <!-- الأكواد: أدوات مشتركة ← بناء الأقسام ← السلوكيات ← التشغيل -->
   <script src="js/utils.js"></script>

@@ -1,5 +1,5 @@
 /* Markup for the footer (#footer), the floating WhatsApp button (#waFloat) and the loader (#loader).
-   Text comes from content/site.js -> brand. */
+   Text comes from content/ar.js + content/en.js -> brand. */
 Leen.sections.footer = function (c) {
   return '' +
     '<div class="wrap footer-inner">' +

@@ -1,5 +1,5 @@
-/* Markup for the booking form (#booking). Text comes from content/site.js -> booking.
-   The service dropdown is built from content/site.js -> services.items. */
+/* Markup for the booking form (#booking). Text comes from content/ar.js + content/en.js -> booking.
+   The service dropdown is built from content/ar.js + content/en.js -> services.items. */
 Leen.sections.booking = function (c) {
   var b = c.booking, f = b.form;
   var points = b.points.map(function (p) { return '<li>' + p + '</li>'; }).join('');

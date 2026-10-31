@@ -1,4 +1,4 @@
-/* Markup for the Services section (#services). Text/images come from content/site.js -> services. */
+/* Markup for the Services section (#services). Text/images come from content/ar.js + content/en.js -> services. */
 Leen.sections.services = function (c) {
   var s = c.services;
   var cards = s.items.map(function (it) {

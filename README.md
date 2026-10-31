@@ -8,7 +8,10 @@
 site/
 ├── index.html            هيكل الصفحة فقط (لا نصوص فيه)
 ├── content/
-│   └── site.js           كل النصوص والروابط ومسارات الصور  ← عدّلي هنا
+│   ├── ar.js             كل النصوص العربية والروابط ومسارات الصور  ← عدّلي هنا
+│   ├── en.js             النسخة الإنجليزية بنفس البنية
+│   ├── settings.js       إعدادات مشتركة (رقم الواتساب، اللغة الافتراضية، سرعة المعرض)
+│   └── select.js         يختار اللغة (لا حاجة لتعديله)
 ├── assets/
 │   ├── images/
 │   │   ├── about/        صور قسم "من نحن"
@@ -32,17 +35,22 @@ site/
 
 | أريد أن... | أين؟ |
 |---|---|
-| أغيّر أي نص أو عنوان | `content/site.js` |
-| أغيّر رقم الواتساب | `content/site.js` ← `settings.whatsappNumber` و`phoneDisplay` |
-| أضيف خدمة أو أحذفها | `content/site.js` ← `services.items` (ينعكس تلقائيًا على قائمة الحجز) |
+| أغيّر أي نص أو عنوان | `content/ar.js` للعربية و`content/en.js` للإنجليزية |
+| أغيّر رقم الواتساب | `content/settings.js` ← `whatsappNumber` و`phoneDisplay` |
+| أغيّر اللغة الافتراضية | `content/settings.js` ← `defaultLang` (`'ar'` أو `'en'`) |
+| أفتح الموقع مباشرة بالإنجليزية | أضيفي `?lang=en` للرابط |
+| أضيف خدمة أو أحذفها | `services.items` في **الملفين** ar.js وen.js (ينعكس تلقائيًا على قائمة الحجز) |
 | أستبدل صورة خدمة | ضعي صورة بنفس الاسم في `assets/images/services/` |
-| أضيف صورة للمعرض | ضعيها في `assets/images/gallery/` وأضيفي سطرها في `gallery.images` |
+| أضيف صورة للمعرض | ضعيها في `assets/images/gallery/` وأضيفي سطرها في `gallery.images` في الملفين |
 | أغيّر الألوان | أعلى `css/base.css` |
-| أغيّر سرعة دوران المعرض | `content/site.js` ← `settings.ringSpeed` |
+| أغيّر خطوط وأحجام النسخة الإنجليزية | `css/lang-en.css` |
+| أغيّر سرعة دوران المعرض | `content/settings.js` ← `ringSpeed` |
 | أغيّر شكل قسم | `css/<القسم>.css` وللمكوّنات `js/sections/<القسم>.js` |
+
+زر تبديل اللغة (EN / عربي) في شريط التنقل، ويحفظ اختيار الزائرة في المتصفح. عند إضافة لغة ثالثة انسخي `en.js` باسم جديد وأضيفيه في `index.html` قبل `select.js`.
 
 داخل العناوين استخدمي `<em>كلمة</em>` لتلوين الكلمة بالوردي.
 
 ## تغيير فيديو الهيرو
 
-حوّلي الفيديو الجديد إلى إطارات WebP بنفس التسمية، ضعيها في `assets/frames/hero/`، ثم عدّلي `settings.heroFrames.count` في `content/site.js`.
+حوّلي الفيديو الجديد إلى إطارات WebP بنفس التسمية، ضعيها في `assets/frames/hero/`، ثم عدّلي `heroFrames.count` في `content/settings.js`.
